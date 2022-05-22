@@ -39,7 +39,7 @@ public class PlayGameActivity extends AppCompatActivity {
 //        getSupportActionBar().setDisplayUseLogoEnabled(true);
 //        getSupportActionBar().setElevation(0);
         // Link to xml file
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_play_game);
 
         // TODO 3-B: assign View member variables
         questionImageView = findViewById(R.id.iv_main_question_image);
