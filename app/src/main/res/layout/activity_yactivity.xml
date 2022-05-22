@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YActivity">
+
+    <ImageView
+        android:id="@+id/imageView121"
+        android:layout_width="171dp"
+        android:layout_height="169dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/y1" />
+
+    <ImageView
+        android:id="@+id/imageView122"
+        android:layout_width="166dp"
+        android:layout_height="262dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="33dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/y2" />
+
+    <ImageView
+        android:id="@+id/imageView123"
+        android:layout_width="171dp"
+        android:layout_height="235dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView124"
+        app:layout_constraintTop_toBottomOf="@+id/imageView122"
+        app:srcCompat="@drawable/y3" />
+
+    <ImageView
+        android:id="@+id/imageView124"
+        android:layout_width="143dp"
+        android:layout_height="193dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="37dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView121"
+        app:srcCompat="@drawable/y4" />
+
+    <ImageView
+        android:id="@+id/imageView125"
+        android:layout_width="284dp"
+        android:layout_height="156dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView123"
+        app:srcCompat="@drawable/y5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
