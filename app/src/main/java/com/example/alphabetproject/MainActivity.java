@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnX;
     private Button btnY;
     private Button btnZ;
+    private Button btnPlayGame;
 
 
     @Override
@@ -70,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
         btnX = findViewById(R.id.btnX);
         btnY = findViewById(R.id.btnY);
         btnZ = findViewById(R.id.btnZ);
+        btnPlayGame = findViewById(R.id.btnPlayGame);
 
 
 
@@ -300,6 +302,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ZActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        btnPlayGame.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, PlayGameActivity.class);
                 startActivity(intent);
             }
         });
