@@ -175,19 +175,19 @@ public class PlayGameActivity extends AppCompatActivity {
         questions = new ArrayList<>();
 
         // TODO 2-H: Provide actual drawables for each of these questions!
-        Question question0 = new Question(R.drawable.a4, "A", "F", "K", "Q", 0);
-        Question question1 = new Question(R.drawable.d4, "L", "Q", "T", "D", 3);
-        Question question2 = new Question(R.drawable.h2, "P", "H", "D", "R", 1);
-        Question question3 = new Question(R.drawable.j1, "C", "E", "I", "J", 3);
-        Question question4 = new Question(R.drawable.l4,"G", "J", "L", "O", 2);
-        Question question5 = new Question(R.drawable.o3, "O", "S", "X", "Y", 0);
-        Question question6 = new Question(R.drawable.q5, "P", "Q", "T", "V", 1);
-        Question question7 = new Question(R.drawable.s4, "E", "K", "S", "Z", 2);
-        Question question8 = new Question(R.drawable.u3, "L", "M", "R", "U", 3);
-        Question question9 = new Question(R.drawable.w2, "B", "M", "P", "W", 3);
-        Question question10 = new Question(R.drawable.x5, "Q", "X", "R", "V", 1);
-        Question question11 = new Question(R.drawable.z4, "P", "W", "Z", "C", 2);
-        Question question12 = new Question(R.drawable.k3, "G", "C", "K", "M", 2);
+        Question question0 = new Question(R.drawable.a4_update, "A", "F", "K", "Q", 0);
+        Question question1 = new Question(R.drawable.d4_update, "L", "Q", "T", "D", 3);
+        Question question2 = new Question(R.drawable.h2_update, "P", "H", "D", "R", 1);
+        Question question3 = new Question(R.drawable.j1_update, "C", "E", "I", "J", 3);
+        Question question4 = new Question(R.drawable.l4_update,"G", "J", "L", "O", 2);
+        Question question5 = new Question(R.drawable.o3_update, "O", "S", "X", "Y", 0);
+        Question question6 = new Question(R.drawable.q5_update, "P", "Q", "T", "V", 1);
+        Question question7 = new Question(R.drawable.s4_update, "E", "K", "S", "Z", 2);
+        Question question8 = new Question(R.drawable.u3_update, "L", "M", "R", "U", 3);
+        Question question9 = new Question(R.drawable.w2_update, "B", "M", "P", "W", 3);
+        Question question10 = new Question(R.drawable.x5_update, "Q", "X", "R", "V", 1);
+        Question question11 = new Question(R.drawable.z4_update, "P", "W", "Z", "C", 2);
+        Question question12 = new Question(R.drawable.k3_update, "G", "C", "K", "M", 2);
         questions.add(question0);
         questions.add(question1);
         questions.add(question2);

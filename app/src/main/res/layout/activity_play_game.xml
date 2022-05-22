@@ -23,7 +23,7 @@
         android:id="@+id/iv_main_question_image"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="104dp"
         android:adjustViewBounds="true"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
