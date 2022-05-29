@@ -27,7 +27,7 @@ public class ListViewActivity extends AppCompatActivity {
             btns.add(str_alpha);
         }
 
-        ArrayAdapter adapter = new ArrayAdapter<String>(this, R.layout.activity_list_view, btns);
+        ArrayAdapter adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, btns);
 
         lv = findViewById(R.id.listView);
         lv.setAdapter(adapter);
