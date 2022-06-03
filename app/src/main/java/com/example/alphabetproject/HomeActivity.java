@@ -30,7 +30,7 @@ public class HomeActivity extends AppCompatActivity {
         btnRepo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.github.com/haris-bit.AlphabetProjectApp"));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/haris-bit/AlphabetProjectApp"));
                 startActivity(browserIntent);
             }
         });
