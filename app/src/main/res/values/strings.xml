@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AlphabetProject</string>
+    <string name="view_alphabets_button_form">View Alphabets (Button Form)</string>
 </resources>

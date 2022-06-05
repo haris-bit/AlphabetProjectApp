@@ -25,10 +25,12 @@
         android:background="@drawable/rounded_btn"
         android:backgroundTint="#E1B7B7"
         android:text="Repo"
+        android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/btnAlphaButtons"
@@ -39,7 +41,7 @@
         android:layout_marginEnd="162dp"
         android:background="@drawable/rounded_btn"
         android:backgroundTint="#E1B7B7"
-        android:text="View Alphabets (Button Form)"
+        android:text="@string/view_alphabets_button_form"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
