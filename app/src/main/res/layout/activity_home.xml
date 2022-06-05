@@ -9,8 +9,10 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
         android:src="@drawable/coding"
-        android:scaleType="centerCrop" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <Button
         android:id="@+id/btnRepo"
@@ -32,7 +34,7 @@
         android:layout_width="238dp"
         android:layout_height="79dp"
         android:layout_marginStart="162dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="162dp"
         android:background="@drawable/rounded_btn"
         android:backgroundTint="#E1B7B7"
@@ -48,7 +50,7 @@
         android:layout_width="223dp"
         android:layout_height="81dp"
         android:layout_marginStart="162dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="162dp"
         android:background="@drawable/rounded_btn"
         android:backgroundTint="#E1B7B7"
@@ -63,7 +65,7 @@
         android:layout_width="119dp"
         android:layout_height="63dp"
         android:layout_marginStart="162dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="162dp"
         android:background="@drawable/rounded_btn"
         android:backgroundTint="#E1B7B7"
@@ -71,7 +73,20 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAlphaList" />
+        app:layout_constraintTop_toBottomOf="@+id/btnAlphaCustom" />
+
+
+    <Button
+        android:id="@+id/btnAlphaCustom"
+        android:layout_width="236dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/rounded_btn"
+        android:backgroundTint="#E1B7B7"
+        android:text="View Alphabets (Custom List)"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlphaList"
+        tools:layout_editor_absoluteX="87dp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -85,5 +100,6 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
