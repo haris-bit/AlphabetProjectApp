@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class CustomActivity extends AppCompatActivity {
 
     private ListView listView;
@@ -16,6 +19,16 @@ public class CustomActivity extends AppCompatActivity {
 
         listView = findViewById(R.id.listView);
 
+        List<Alphabet> lst = new ArrayList<Alphabet>();
+        lst.add(new Alphabet(R.drawable.a1, "A"));
+        lst.add(new Alphabet(R.drawable.b1, "B"));
+        lst.add(new Alphabet(R.drawable.c1, "C"));
+        lst.add(new Alphabet(R.drawable.d1, "D"));
+
+
+        AlphabetAdapter alphabetAdapter = new AlphabetAdapter(this, lst);
+
+        listView.setAdapter(alphabetAdapter);
 
     }
 }

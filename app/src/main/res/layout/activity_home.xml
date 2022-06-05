@@ -7,6 +7,7 @@
     tools:context=".HomeActivity">
 
     <ImageView
+        android:id="@+id/imageView131"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
@@ -85,8 +86,9 @@
         android:backgroundTint="#E1B7B7"
         android:text="View Alphabets (Custom List)"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/btnAlphaList"
-        tools:layout_editor_absoluteX="87dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlphaList" />
 
     <TextView
         android:id="@+id/textView3"

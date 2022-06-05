@@ -16,6 +16,7 @@ public class HomeActivity extends AppCompatActivity {
     private Button btnAlphaButtons;
     private Button btnAlphaList;
     private Button btnGame;
+    private Button btnAlphaCustom;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class HomeActivity extends AppCompatActivity {
         btnAlphaButtons = findViewById(R.id.btnAlphaButtons);
         btnAlphaList = findViewById(R.id.btnAlphaList);
         btnGame = findViewById(R.id.btnGame);
+        btnAlphaCustom = findViewById(R.id.btnAlphaCustom);
 
         btnRepo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +57,14 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getBaseContext(), PlayGameActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnAlphaCustom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getBaseContext(), CustomActivity.class);
                 startActivity(intent);
             }
         });
