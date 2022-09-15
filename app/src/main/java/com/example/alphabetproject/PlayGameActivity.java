@@ -19,7 +19,6 @@ public class PlayGameActivity extends AppCompatActivity {
     int totalQuestions;
     ArrayList<Question> questions;
 
-    // TODO 3-A: Declare View member variables
     ImageView questionImageView;
     TextView questionsRemainingTextView;
     Button answer0Button;
@@ -32,16 +31,8 @@ public class PlayGameActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        // TODO 2-G: Show app icon in ActionBar
-//        getSupportActionBar().setDisplayShowHomeEnabled(true);
-//        getSupportActionBar().setLogo(R.drawable.ic_unquote_icon);
-//        getSupportActionBar().setDisplayUseLogoEnabled(true);
-//        getSupportActionBar().setElevation(0);
-        // Link to xml file
         setContentView(R.layout.activity_play_game);
 
-        // TODO 3-B: assign View member variables
         questionImageView = findViewById(R.id.iv_main_question_image);
         questionsRemainingTextView = findViewById(R.id.tv_main_questions_remaining_count);
         answer0Button = findViewById(R.id.btn_main_answer_0);
@@ -51,7 +42,6 @@ public class PlayGameActivity extends AppCompatActivity {
         submitButton = findViewById(R.id.btn_main_submit_answer);
 
 
-        // TODO 4-E: set onClickListener for each answer Button
         answer0Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -80,7 +70,6 @@ public class PlayGameActivity extends AppCompatActivity {
             }
         });
 
-        // TODO 5-A: set onClickListener for the submit answer Button
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -91,7 +80,6 @@ public class PlayGameActivity extends AppCompatActivity {
         startNewGame();
     }
 
-    // TODO 3-F: displayQuestion(Question question) {...}
     void displayQuestion(Question question) {
         questionImageView.setImageResource(question.imageId);
         answer0Button.setText(question.answer0);
@@ -99,12 +87,11 @@ public class PlayGameActivity extends AppCompatActivity {
         answer2Button.setText(question.answer2);
         answer3Button.setText(question.answer3);
     }
-    // TODO 3-C: displayQuestionsRemaining(int questionRemaining) {...}
+
     void displayQuestionsRemaining(int questionsRemaining) {
-//        String rem1 = String.valueOf(questionsRemaining);
         questionsRemainingTextView.setText(String.valueOf(questionsRemaining));
     }
-    // TODO 4-A: onAnswerSelected(int answerSelected) {...}
+
     void onAnswerSelected(int answerSelected) {
 
         // Recover the current Question
@@ -143,30 +130,25 @@ public class PlayGameActivity extends AppCompatActivity {
         }
         questions.remove(currentQuestion);
 
-        // TODO 3-D.i: Uncomment the line below after implementing displayQuestionsRemaining(int)
         displayQuestionsRemaining(questions.size());
 
         if (questions.size() == 0) {
             String gameOverMessage = getGameOverMessage(totalCorrect, totalQuestions);
 
-            // TODO 5-D: Show a popup instead
             AlertDialog.Builder gameOverDialogBuilder = new AlertDialog.Builder(PlayGameActivity.this);
             gameOverDialogBuilder.setCancelable(false);
             gameOverDialogBuilder.setTitle("Game Over!");
             gameOverDialogBuilder.setMessage(gameOverMessage);
-            // Give them another chance...
             gameOverDialogBuilder.setPositiveButton("Play Again!", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     startNewGame();
                 }
             });
-            // Present the dialog
             gameOverDialogBuilder.create().show();
         } else {
             chooseNewQuestion();
 
-            // TODO 3-H.i: uncomment after implementing displayQuestion(Question)
             displayQuestion(getCurrentQuestion());
         }
     }
@@ -174,7 +156,6 @@ public class PlayGameActivity extends AppCompatActivity {
     void startNewGame() {
         questions = new ArrayList<>();
 
-        // TODO 2-H: Provide actual drawables for each of these questions!
         Question question0 = new Question(R.drawable.a4_update, "A", "F", "K", "Q", 0);
         Question question1 = new Question(R.drawable.d4_update, "L", "Q", "T", "D", 3);
         Question question2 = new Question(R.drawable.h2_update, "P", "H", "D", "R", 1);
@@ -213,10 +194,8 @@ public class PlayGameActivity extends AppCompatActivity {
 
         Question firstQuestion = chooseNewQuestion();
 
-        // TODO 3-D.ii: Uncomment the line below after implementing displayQuestionsRemaining(int)
         displayQuestionsRemaining(questions.size());
 
-        // TODO 3-H.ii: Uncomment after implementing displayQuestion(Question)
         displayQuestion(firstQuestion);
     }
 
