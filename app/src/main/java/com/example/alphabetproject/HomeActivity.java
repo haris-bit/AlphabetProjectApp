@@ -14,6 +14,7 @@ public class HomeActivity extends AppCompatActivity {
 
     private Button btnRepo;
     private Button btnAlphaButtons;
+    private Button btnAlphaButtonsBetter;
     private Button btnAlphaList;
     private Button btnGame;
     private Button btnAlphaCustom;
@@ -25,6 +26,7 @@ public class HomeActivity extends AppCompatActivity {
 
         btnRepo = findViewById(R.id.btnRepo);
         btnAlphaButtons = findViewById(R.id.btnAlphaButtons);
+        btnAlphaButtonsBetter = findViewById(R.id.btnAlphaButtonsBetter);
         btnAlphaList = findViewById(R.id.btnAlphaList);
         btnGame = findViewById(R.id.btnGame);
         btnAlphaCustom = findViewById(R.id.btnAlphaCustom);
@@ -44,6 +46,15 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btnAlphaButtonsBetter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(), BetterActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         btnAlphaList.setOnClickListener(new View.OnClickListener() {
             @Override

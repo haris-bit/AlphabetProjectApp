@@ -20,7 +20,7 @@
         android:layout_width="107dp"
         android:layout_height="64dp"
         android:layout_marginStart="162dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="162dp"
         android:background="@drawable/rounded_btn"
         android:backgroundTint="#E1B7B7"
@@ -32,19 +32,20 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         tools:ignore="TextContrastCheck" />
 
+
     <Button
         android:id="@+id/btnAlphaButtons"
         android:layout_width="238dp"
         android:layout_height="79dp"
         android:layout_marginStart="162dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="162dp"
         android:background="@drawable/rounded_btn"
         android:backgroundTint="#E1B7B7"
         android:text="@string/view_alphabets_button_form"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnRepo" />
 
@@ -53,22 +54,23 @@
         android:layout_width="223dp"
         android:layout_height="81dp"
         android:layout_marginStart="162dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="162dp"
         android:background="@drawable/rounded_btn"
         android:backgroundTint="#E1B7B7"
         android:text="View Alphabets (List Form)"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAlphaButtons" />
+        app:layout_constraintTop_toBottomOf="@+id/btnAlphaButtonsBetter" />
 
     <Button
         android:id="@+id/btnGame"
         android:layout_width="119dp"
         android:layout_height="63dp"
         android:layout_marginStart="162dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="162dp"
         android:background="@drawable/rounded_btn"
         android:backgroundTint="#E1B7B7"
@@ -78,17 +80,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnAlphaCustom" />
 
-
     <Button
         android:id="@+id/btnAlphaCustom"
         android:layout_width="236dp"
         android:layout_height="79dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/rounded_btn"
         android:backgroundTint="#E1B7B7"
         android:text="View Alphabets (Custom List)"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnAlphaList" />
 
@@ -104,6 +106,19 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAlphaButtonsBetter"
+        android:layout_width="238dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_btn"
+        android:backgroundTint="#E1B7B7"
+        android:text="VIEW ALPHABETS (BETTER APPROACH)"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageView131"
+        app:layout_constraintStart_toEndOf="@+id/imageView131"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlphaButtons" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
