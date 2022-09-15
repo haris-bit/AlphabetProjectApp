@@ -53,6 +53,14 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        btnAlphaCustom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getBaseContext(), CustomActivity.class);
+                startActivity(intent);
+            }
+        });
+
         btnGame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -61,13 +69,6 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        btnAlphaCustom.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getBaseContext(), CustomActivity.class);
-                startActivity(intent);
-            }
-        });
 
     }
 }

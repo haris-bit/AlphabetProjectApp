@@ -24,9 +24,10 @@ public class AlphabetAdapter extends ArrayAdapter<Alphabet> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
-        // StudentAdapter is the context;
+        // AlphabetAdapter is the context;
         Alphabet alphabet = this.getItem(position);
         // setting custom layout to convertview
+        // converting xml to java
         convertView = LayoutInflater.from(getContext()).inflate(R.layout.alphabetlayout, parent, false);
         ImageView iv = convertView.findViewById(R.id.imageView);
         TextView tvAlpha = convertView.findViewById(R.id.tvAlpha);

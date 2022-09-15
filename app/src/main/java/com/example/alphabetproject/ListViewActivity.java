@@ -22,7 +22,7 @@ public class ListViewActivity extends AppCompatActivity {
         btns = new ArrayList<String>();
         String str_alpha = null;
 
-        for (int i = 65; i <= 97; i++) {
+        for (int i = 65; i <= 90; i++) {
             str_alpha = Character.toString((char) i);
             btns.add(str_alpha);
         }
